@@ -22,7 +22,7 @@
 
 <hr>
 
-# Features <span style="font-size: 0.5em;">(compared to popular solutions)</span>
+# Features <span style="font-size: 0.45em;">(compared to popular solutions)</span>
 
 | Browser | CamouHub | Octo Browser | Linken Sphere | Undetectable.io | GoLogin | AntBrowser |
 |-|-|-|-|-|-|-|

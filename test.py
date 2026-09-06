@@ -9,7 +9,7 @@ def download_proxy_list():
             proxies = [line.strip() for line in response.text.splitlines() if line.strip()]
             return proxies
     except Exception as e:
-        print(f"Ошибка при скачивании: {e}")
+        print(f"Download error: {e}")
     return []
 
 def check_single_proxy(proxy):
@@ -22,7 +22,7 @@ def check_single_proxy(proxy):
     try:
         response = requests.get(test_url, proxies=proxies_dict, timeout=3)
         if response.status_code == 200:
-            print(f"[РАБОТАЕТ] {proxy} -> {response.json().get('origin')}")
+            print(f"[ACTIVE] {proxy} -> {response.json().get('origin')}")
             return proxy
     except:
         pass
@@ -30,7 +30,7 @@ def check_single_proxy(proxy):
 
 def check_proxies_batch(proxy_list, max_threads=50):
     working_proxies = []
-    print("Начинаю проверку прокси...")
+    print("Checking proxies...")
     
     with ThreadPoolExecutor(max_workers=max_threads) as executor:
         results = executor.map(check_single_proxy, proxy_list)
@@ -38,7 +38,7 @@ def check_proxies_batch(proxy_list, max_threads=50):
             if result:
                 working_proxies.append(result)
                 
-    print(f"Проверка завершена. Рабочих прокси: {len(working_proxies)} из {len(proxy_list)}")
+    print(f"Done, working proxies: {len(working_proxies)}/{len(proxy_list)}")
     return working_proxies
 
 def run_browser():
@@ -82,7 +82,7 @@ def run_browser():
         page = context.new_page()
         page.goto("https://google.com/")
         
-        input("Нажми Enter, чтобы закрыть браузер...")
+        input("Press Enter for close...")
         context.close()
 
 if __name__ == "__main__":

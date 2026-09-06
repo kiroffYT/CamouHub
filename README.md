@@ -29,7 +29,7 @@
 | **Price** | **Fully free** | €10 / month (~$11) | $24–30 / month | $49 / month | $49 / month | ~$22 / month |
 | **Cloud profiles** | ♾️ *(Coming soon)* | 3 | 30 | 50 | 100 | 100 |
 | **Local profiles** | ♾️ | ❌ | ❌ | ♾️  | ❌ | ❌ |
-| **Price per profile** | **Free** | ~€3.33 (~$3.67) | ~$0.8 – $1 | ~$0.98 *(cloud)* | ~$0.49 | ~$0.22 |
+| **Price per profile** | **Free** | \~€3.33 (\~$3.67) | ~$0.8 – $1 | ~$0.98 *(cloud)* | ~$0.49 | ~$0.22 |
 | **API** | ✅ **Full (local and cloud)** | ❌ *(from Base)* | ❌ *(from Pro)* | ✅ **Local API** | ⚠️ Restricted | ✅ **Local / Cloud** |
 | **Team access** | ✅ (with access key) | ❌ | ❌ | ❌ | ❌ | ❌ |
 | **Mass actions / fingerprints**| ✅ | ❌ Standard | ✅ | ✅ | ✅ | ✅ |
